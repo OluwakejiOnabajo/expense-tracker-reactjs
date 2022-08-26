@@ -1,3 +1,15 @@
+# Project Detail
+
+### Title: HTML Table Populated with different data using React
+
+### SAIL Tech Talent Project 5
+
+### Description:
+This project is a where user can populate the table or write into the table using Reactjs
+
+### Preview
+This project have been deployed and can be view [here - react-datatable](https://react-datatable.herokuapp.com/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
