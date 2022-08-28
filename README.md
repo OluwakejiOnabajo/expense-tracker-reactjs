@@ -8,7 +8,7 @@
 This project is an expense tracker app that helps users keep track of their income and expenditure and also diaplay the history of their transactions
 
 ### Preview
-This project have been deployed and can be view [here - react-datatable](https://react-datatable.herokuapp.com/).
+This project have been deployed and can be view [here - expense-tracker-reactjs](https://expense-tracker-reactjs.herokuapp.com/).
 
 # Getting Started with Create React App
 
