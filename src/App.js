@@ -6,6 +6,8 @@ import Balance from './components/balance/Balance'
 import Expense from './components/expense/Expense';
 import NewTransaction from './components/newTransaction/NewTransaction';
 import Transactions from './components/transactions/Transactions';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 
 function App() {
   // Set state
@@ -15,18 +17,24 @@ function App() {
     {id: 3, text: "Salary", amount: +20, date: "11/04/1990" },
     
   ])
+
+  const style ={
+    textAlign: "center",
+  }
   return (
-    <div className="App">
-      <h3>Expense Tracker</h3>
+
+    <Card >
+      <CardContent>
+        <Typography style={style} variant="h4" color="text.secondary" gutterBottom>Expense Tracker </Typography>
+
+        <Box className="App">
 
       {/* Transaction saummary */}
-      <Box>
+      <Box className="summary">
         <Balance transactions={transactions} />
         <Expense transactions={transactions}  />
-      </Box>
-
+        
       {/* Add transactions */}
-      <Box>
         <NewTransaction transactions={transactions} setTransactions={setTransactions}  />
       </Box>
       
@@ -34,7 +42,9 @@ function App() {
       <Box>
         <Transactions transactions={transactions} setTransactions={setTransactions} />                                                                                                                                                                                                     
       </Box>
-    </div>
+    </Box>
+    </CardContent>
+    </Card>
   );
 }
 

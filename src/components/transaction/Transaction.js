@@ -14,6 +14,22 @@ const Transaction = (props) => {
    color = 'White';
   }
 
+  const style ={marginTop: "10px", 
+  display: "flex", 
+  justifyContent: 
+  "space-between", 
+  width: "100%", 
+  border: "1px solid blue",
+  background: bg, color: color}
+
+  const style2 = {
+    margin: "3px 30px",
+  }
+
+  const iconDel ={
+    cursor: "pointer",
+  }
+
 //   Delete transaction
   const deleteTrans = (id) =>{
     // console.log(id);
@@ -22,11 +38,11 @@ const Transaction = (props) => {
 
   return (
     // Single transaction
-         <ListItem style={{background: bg, color: color}}>
-         <ListItemText>{transaction.text}</ListItemText>
-         <ListItemText>{transaction.amount}</ListItemText>
-         <ListItemText>{transaction.date}</ListItemText>
-         <ListItemText><DeleteIcon onClick={() => deleteTrans(transaction.id)} /> </ListItemText>
+         <ListItem className='lsit-item' style={style}>
+         <ListItemText style={style2}>{transaction.text}</ListItemText>
+         <ListItemText style={style2}>{transaction.amount}</ListItemText>
+         <ListItemText style={style2}>{transaction.date}</ListItemText>
+         <ListItemText style={style2}><DeleteIcon style={iconDel} onClick={() => deleteTrans(transaction.id)} /> </ListItemText>
           </ListItem>
   )
 }

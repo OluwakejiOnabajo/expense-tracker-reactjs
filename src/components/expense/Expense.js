@@ -1,6 +1,5 @@
 import './Expense.css';
-import { Typography, Card, CardContent } from '@mui/material';
-import NewTransaction from '../newTransaction/NewTransaction';
+import { Typography, Card, CardContent, Box } from '@mui/material';
 
 const Expense = (props) => { 
     const {transactions} = props;
@@ -15,16 +14,16 @@ const income = amount.filter(item => item > 0).reduce((acc, item) => (acc += ite
 const expense = (amount.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) * -1).toFixed(2);
 
   return (
-    <div className='Expense'>
-        <Card>  
+    <Box className='expense'>
+        <Card className='card'>  
             {/* Insome */}
             <CardContent>
                 <Typography>Income</Typography>
-                <Typography style={{color: 'blue'}}>N{income}</Typography>
+                <Typography style={{color: 'blue'}}>${income}</Typography>
             </CardContent>
         </Card>
         
-        <Card> 
+        <Card className='card'>  
             {/* Expense */}
             <CardContent>
                 <Typography>Expense</Typography>
@@ -32,7 +31,7 @@ const expense = (amount.filter(item => item < 0).reduce((acc, item) => (acc += i
             </CardContent>
         </Card>
 
-    </div>
+    </Box>
   )
 }
 

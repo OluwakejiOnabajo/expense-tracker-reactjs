@@ -1,4 +1,4 @@
-import React from 'react'
+import './Transactions.css'
 import Transaction from '../transaction/Transaction';
 import {Box, Typography, Divider, List} from '@mui/material';
 
@@ -6,8 +6,8 @@ const Transactions = (props) => {
   const {transactions, setTransactions} = props;
 
   return (
-    <Box>
-      <Typography variant="h4">Transaction History</Typography>
+    <Box className="history">
+      <Typography variant="h6">Transaction History</Typography>
       <Divider />
       {/* Get all transactions */}
       <List>
