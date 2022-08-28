@@ -1,11 +1,11 @@
 # Project Detail
 
-### Title: HTML Table Populated with different data using React
+### Title: Expense Tracker App using Reactjs
 
-### SAIL Tech Talent Project 5
+### SAIL Tech Talent Project 6
 
 ### Description:
-This project is a where user can populate the table or write into the table using Reactjs
+This project is an expense tracker app that helps users keep track of their income and expenditure and also diaplay the history of their transactions
 
 ### Preview
 This project have been deployed and can be view [here - react-datatable](https://react-datatable.herokuapp.com/).
