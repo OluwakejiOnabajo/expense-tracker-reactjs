@@ -27,7 +27,7 @@ const expense = (amount.filter(item => item < 0).reduce((acc, item) => (acc += i
             {/* Expense */}
             <CardContent>
                 <Typography>Expense</Typography>
-                <Typography  style={{color: 'green'}}>N{expense}</Typography>
+                <Typography  style={{color: 'green'}}>${expense}</Typography>
             </CardContent>
         </Card>
 
