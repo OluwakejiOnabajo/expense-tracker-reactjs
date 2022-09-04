@@ -1,0 +1,10 @@
+.list-item{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.list-item .icon{
+    cursor: pointer;
+}

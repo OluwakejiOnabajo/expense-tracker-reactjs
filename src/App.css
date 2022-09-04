@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   display: flex;
+  justify-content: space-between;
+}
+
+.App .summary, .App .history{
+  padding: 10px;
+  flex: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -21,4 +27,5 @@
 
 .expense .summary{
 display: flex;
+margin: 30px;
 }

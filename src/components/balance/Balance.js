@@ -11,7 +11,7 @@ const Balance = (props) => {
   const total = amount.reduce((amount, item) => (amount += item), 0).toFixed(2);
   return (
     <Box>
-        <Typography variant='h6' >Balance: ${total}</Typography>
+        <Typography variant='h6' className='balance' >Balance: ${total}</Typography>
 
     </Box>
   )

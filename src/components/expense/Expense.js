@@ -16,7 +16,7 @@ const expense = (amount.filter(item => item < 0).reduce((acc, item) => (acc += i
   return (
     <Box className='expense'>
         <Card className='card'>  
-            {/* Insome */}
+            {/* Income */}
             <CardContent>
                 <Typography>Income</Typography>
                 <Typography style={{color: 'blue'}}>${income}</Typography>
